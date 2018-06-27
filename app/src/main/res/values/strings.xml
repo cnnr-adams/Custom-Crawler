@@ -12,4 +12,21 @@
     <string name="hint_url">Paste URL</string>
     <string name="create_accept">Create</string>
     <string name="create_cancel">Cancel</string>
+    <string name="hint_keyword">Keyword to Search</string>
+    <string name="add_more">Add More Depth</string>
+    <string name="notify">Notify of changes?</string>
+    <string-array name="create_input_array">
+        <item>Custom</item>
+        <item>Price</item>
+    </string-array>
+    <string-array name="times_array">
+        <item>Never</item>
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>4 Hours</item>
+        <item>12 Hours</item>
+        <item>24 Hours</item>
+        <item>48 Hours</item>
+    </string-array>
 </resources>

@@ -31,4 +31,35 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="16dp"
         android:hint="@string/hint_url"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <ListView
+        android:id="@+id/depth_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dip"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/time_spinner"
+            android:layout_width="125sp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_height="match_parent" />
+        <Switch
+            android:id="@+id/create_titlea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/notify"
+             />
+    </LinearLayout>
 </LinearLayout>

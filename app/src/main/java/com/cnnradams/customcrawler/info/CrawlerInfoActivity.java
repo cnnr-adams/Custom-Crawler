@@ -1,4 +1,4 @@
-package com.cnnradams.customcrawler;
+package com.cnnradams.customcrawler.info;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+
+import com.cnnradams.customcrawler.CrawlerDataObject;
+import com.cnnradams.customcrawler.R;
 
 public class CrawlerInfoActivity extends AppCompatActivity {
 

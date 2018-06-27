@@ -1,4 +1,4 @@
-package com.cnnradams.customcrawler;
+package com.cnnradams.customcrawler.main;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.cnnradams.customcrawler.CrawlerDataObject;
+import com.cnnradams.customcrawler.R;
 
 /**
  * Created by cnnr2 on 2018-06-27.

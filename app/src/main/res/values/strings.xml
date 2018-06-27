@@ -2,4 +2,14 @@
     <string name="app_name">Custom Crawler</string>
     <string name="action_settings">Settings</string>
     <string name="refresh">Refresh</string>
+    <string name="edit">Edit</string>
+    <string name="create">Create Crawler</string>
+    <string name="delete">Delete</string>
+    <string name="fill">Loading…</string>
+    <string name="title_activity_crawler_info">CrawlerInfoActivity</string>
+    <string name="title_activity_create_crawler">Create Crawler</string>
+    <string name="hint_title">Name of Crawler</string>
+    <string name="hint_url">Paste URL</string>
+    <string name="create_accept">Create</string>
+    <string name="create_cancel">Cancel</string>
 </resources>

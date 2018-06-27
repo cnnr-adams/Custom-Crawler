@@ -12,30 +12,24 @@ import android.widget.TextView;
  * Created by cnnr2 on 2018-06-27.
  */
 
-public class CrawlerArrayAdapter extends ArrayAdapter<String> {
+public class CrawlerArrayAdapter extends ArrayAdapter<CrawlerDataObject> {
 
     private final Context context;
-    private final String[] values;
-    public CrawlerArrayAdapter(Context context, String[] values) {
-        super(context, -1, values);
+    private final CrawlerDataObject[] data;
+    public CrawlerArrayAdapter(Context context, CrawlerDataObject[] data) {
+        super(context, -1, data);
         this.context = context;
-        this.values = values;
+        this.data = data;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = inflater.inflate(R.layout.rowlayout, parent, false);
-        TextView textView = (TextView) rowView.findViewById(R.id.label);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-        textView.setText(values[position]);
-        // change the icon for Windows and iPhone
-        String s = values[position];
-        if (s.startsWith("iPhone")) {
-            imageView.setImageResource(R.drawable.no);
-        } else {
-            imageView.setImageResource(R.drawable.ok);
-        }
+        View rowView = inflater.inflate(R.layout.crawler_list_item, parent, false);
+        TextView titleTextView = rowView.findViewById(R.id.title);
+        TextView urlTextView = rowView.findViewById(R.id.url);
+        titleTextView.setText(data[position].title);
+        urlTextView.setText(data[position].url);
 
         return rowView;
     }
